@@ -1,0 +1,17 @@
+FunctionvalidateForm(){
+//Gettheusernameandpasswordinputvalues
+Varusername=document.forms[“membershipForm”][“username”].value;
+Varpassword=document.forms[“membershipForm”][“password”].value;
+//Validateusername
+If(username==“”){
+Alert(“Usernamemustbefilledout”);
+Returnfalse;
+}
+//Validatepassword
+If(password==“”){
+Alert(“Passwordmustbefilledout”);
+Returnfalse;
+}
+//Returntrueifbothusernameandpasswordarevalid
+Returntrue;
+}

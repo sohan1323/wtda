@@ -1,0 +1,13 @@
+<?php
+//LoadtheXMLfileintoaSimpleXMLobject
+$xml=simplexml_load_file(“book.xml”);
+//DisplaytheattributesandelementsoftheSimpleXMLobject
+Echo“Bookattributes:<br>”;
+Echo“ISBN:“.$xml[‘isbn’].“<br>”;
+Echo“Publisher:“.$xml[‘publisher’].“<br>”;
+Echo“<br>”;
+Echo“Bookelements:<br>”;
+Echo“Title:“.$xml->title.“<br>”;
+Echo“Author:“.$xml->author.“<br>”;
+Echo“Description:“.$xml->description.“<br>”;
+?

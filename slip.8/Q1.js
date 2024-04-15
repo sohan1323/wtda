@@ -1,0 +1,15 @@
+//Displaymessageusingalertbox
+Alert(‘Examsarenear,haveyoustartedpreparingfor?’);
+//Accepttwonumbersfromuserusingpromptandconfirmboxes
+Letnum1=prompt(‘Enterfirstnumber:’);
+Letnum2=prompt(‘Entersecondnumber:’);
+LetconfirmMsg=`Areyousureyouwanttoadd${num1}and${num2}?`;
+//Showconfirmationmessagetouserusingconfirmbox
+LetconfirmResult=confirm(confirmMsg);
+//Ifuserconfirms,thenperformadditionanddisplaytheresult
+If(confirmResult){
+Num1=parseInt(num1);
+Num2=parseInt(num2);
+Letsum=num1+num2;
+Alert(`Thesumof${num1}and${num2}is${sum}.`);
+}

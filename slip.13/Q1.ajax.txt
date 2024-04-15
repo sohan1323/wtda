@@ -1,0 +1,17 @@
+$(document).ready(function(){
+//Attachaneventlistenertothenameinputfield
+$(‘#name’).on(‘input’,function(){
+//Getthenameenteredbytheuser
+Varname=$(this).val();
+//SendanAJAXrequesttotheserver
+$.ajax({
+url:‘server.php’,
+type:‘POST’,
+data:{name:name},
+success:function(response){
+//Updatetheresponsedivwiththeserver’sresponse
+$(‘#response’).html(response);
+}
+});
+});
+});

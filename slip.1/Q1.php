@@ -1,0 +1,9 @@
+<?php
+Session_start();
+If(isset($_SESSION[‘pcount])){
+$_SESSION[‘pcount]+=1;
+}else{
+$_SESSION[‘pcount]=1;
+}
+Echo“Youhavevisitedthispage“.$_SESSION[‘pcount].”Time(s).”;
+?

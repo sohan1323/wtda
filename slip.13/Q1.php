@@ -1,0 +1,16 @@
+<?php
+//Getthenameenteredbytheuser
+$name=$_POST[‘name’];
+//Checkifthenameisempty
+If(empty($name)){
+Echo‘Stranger,pleasetellmeyourname!’;
+}
+//Checkifthenameisoneofthemasternames
+Elseif($name==‘Rohit’||$name==‘Virat’||$name==‘Dhoni’||$name==‘Ashwin’||$name==
+‘Harbhajan’){
+Echo‘Hello,master!’;
+}
+//Otherwise,theserverdoesn’tknowtheuser
+Else{
+Echo$name.‘,Idon\’tknowyou!’;
+}

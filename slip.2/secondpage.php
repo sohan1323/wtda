@@ -1,0 +1,16 @@
+<?php
+If(isset($_POST[‘submit’])){
+$fontstyle=$_POST[‘fontstyle’];
+$fontsize=$_POST[‘fontsize’];
+$fontcolor=$_POST[‘fontcolor’];
+$bgcolor=$_POST[‘bgcolor’];
+//Setthecookievalues
+Setcookie(‘fontstyle’,$fontstyle,time()+86400);
+Setcookie(‘fontsize’,$fontsize,time()+86400);
+Setcookie(‘fontcolor’,$fontcolor,time()+86400);
+Setcookie(‘bgcolor’,$bgcolor,time()+86400);
+//Redirecttothenextpage
+Header(‘Location:thirdpage.php’);
+Exit();
+}
+?>
